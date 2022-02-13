@@ -71,7 +71,6 @@ public class CCuenta {
     private String cuenta;
     private double saldo;
     private double tipoInterés;
-    int numCuenta;
 
     public CCuenta()
     {
