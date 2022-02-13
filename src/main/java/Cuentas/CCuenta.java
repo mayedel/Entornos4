@@ -9,7 +9,8 @@ package Cuentas;
  * @author May
  */
 public class CCuenta {
-
+    
+/*Hago el encapsulamiento de los atributos creando todos los métodos get y set */
     /**
      * @return the nombre
      */
@@ -66,35 +67,43 @@ public class CCuenta {
         this.tipoInterés = tipoInterés;
     }
 
-
+/*Atributos de la clase*/
     private String nombre;
     private String cuenta;
     private double saldo;
     private double tipoInterés;
-
+    
+    /*Creo una nueva variable*/
+    int cuentaprincipal;
+    
+/*Constructor vacío*/
     public CCuenta()
     {
     }
-
+    
+/*Constructor con los parámetros*/
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         nombre =nom;
         cuenta=cue;
         saldo=sal;
     }
-
+    
+/*Método para obtener el saldo*/
     public double estado()
     {
         return getSaldo();
     }
-
+    
+/*Método con excepciones para ingresar una cantidad*/
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
             throw new Exception("No se puede ingresar una cantidad negativa");
         setSaldo(getSaldo() + cantidad);
     }
-
+    
+/*Método con excepciones para retirar una cantidad*/
     public void retirar(double cantidad) throws Exception
     {
         if (cantidad <= 0)
