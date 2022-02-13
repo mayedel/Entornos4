@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         operativa_cuenta(0);
     }
-
+/*Método creado que recoge todos los métodos con la variable cuenta1*/
     private static void operativa_cuenta(float cantidad) {
         CCuenta cuenta1;
         double saldoActual;
